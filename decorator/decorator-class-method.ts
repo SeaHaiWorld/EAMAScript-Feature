@@ -23,7 +23,12 @@ class Cat {
 }
 
 let cat = new Cat()
-cat.bark = function () {
-  console.log('wang!wang!')
-  return 'wang!wang!'
+try {
+  cat.bark = function () {
+    console.log('wang!wang!')
+    return 'wang!wang!'
+  }
+} catch (e) {
+	console.log(e);
+	// here e, TypeError: Cannot assign to read only property 'bark' of object '#<Cat>'
 }
