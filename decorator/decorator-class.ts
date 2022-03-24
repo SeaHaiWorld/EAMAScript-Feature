@@ -1,4 +1,4 @@
-// decorator can effect on class, decorator can not extend
+// decorator can effect on class, decorator's effect can not be extends
 function animal(target: any) {
   target.isAnimal = true
 }
