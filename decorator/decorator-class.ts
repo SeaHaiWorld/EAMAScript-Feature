@@ -1,4 +1,5 @@
-// decorator can effect on class, decorator's effect can not be extends
+// decorator can effect on class
+// here `target` is `Cat`, not `Cat.prototype`, so decorator's effect can not be extends
 function animal(target: any) {
   target.isAnimal = true
 }
